@@ -3,6 +3,134 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* container */
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
 
-header {
+/* header section */
+.header {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5%;
+}
+
+.header-logo {
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  text-align: left;
+  margin-right: 60px;
+}
+
+.header-content-question {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header-content-explain {
+  margin-top: 8px;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* main section */
+
+.grid-container {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid-item {
+  width: 238px;
+  height: 426.5px;
+}
+
+.image-section {
+  display: flex;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px 0 24px 24px;
+}
+
+.job-description {
+  writing-mode: vertical-lr;
+  margin-left: 8px;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+.name {
+  margin-top: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+footer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: #bdbdbd;
 }
